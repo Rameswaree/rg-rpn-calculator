@@ -71,7 +71,26 @@ public class RPNCalculator implements Calculator {
 
     @Override
     public void handle(String nextLine) {
+        position = -1;
 
+        String[] elements = nextLine.split("\\s");
+        for (String input : elements) {
+            position += 2;
+            //filters spaces in input line
+            if ("".equals(input)) {
+                position--;
+                continue;
+            }
+
+            try {
+                process(input);
+            } catch (CalculatorException e) {
+                System.out.println(e.getMessage());
+                break;
+            }
+        }
+
+        print();
     }
 
     private boolean isNumber(String input) {
@@ -84,10 +103,10 @@ public class RPNCalculator implements Calculator {
     }
 
     private void printHelpMessage() {
-        System.out.printf("[1] The following operators are supported :[%s]", SUPPORTED_OPERATORS);
-        System.out.println("[2]+-* / : Corresponds to addition, subtraction, multiplication, and division operations. Note that when performing division operations, the divisor cannot be 0");
-        System.out.println("[3]sqrt : returns the positive square root, the calculated number must be greater than or equal to 0");
-        System.out.println("[4]clear : Clear all data, can be undone by undo");
-        System.out.println("[5]undo : Undo the last successful operation");
+        System.out.printf("[1] The following operators are supported :[%s]%n", SUPPORTED_OPERATORS);
+        System.out.println("[2] +-*/ : Corresponds to addition, subtraction, multiplication, and division operations. Note that when performing division operations, the divisor cannot be 0");
+        System.out.println("[3] sqrt : returns the positive square root, the calculated number must be greater than or equal to 0");
+        System.out.println("[4] clear : Clear all data, can be undone by undo");
+        System.out.println("[5] undo : Undo the last successful operation");
     }
 }
