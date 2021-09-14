@@ -6,7 +6,7 @@
 
     <groupId>com.airwallex</groupId>
     <artifactId>rg-rpn-calculator</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>rg-rpn-calculator</name>
     <description>RPN Calculator</description>
 
