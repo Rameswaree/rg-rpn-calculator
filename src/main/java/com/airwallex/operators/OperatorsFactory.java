@@ -13,6 +13,11 @@ public class OperatorsFactory {
         init();
     }
 
+    /**
+     * On calling the constructor, the init method gets
+     * invoked, initializing the map with the operator
+     * and the appropriate subclass of InstructorsOperator
+     */
     private void init() {
         operatorsMap = new HashMap<>();
         operatorsMap.put(OperatorsEnum.ADD.getValue(), new AddOperator());
@@ -28,6 +33,12 @@ public class OperatorsFactory {
         return operatorsMap.get(input);
     }
 
+    /**
+     * Checks if the operator is being supported
+     *
+     * @param input The operator to be checked
+     * @return boolean value
+     */
     public boolean isOperatorSupported(String input) {
         return operatorsMap.containsKey(input);
     }

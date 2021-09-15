@@ -22,6 +22,7 @@ public class App {
         while (true) {
             nextLine = scanner.nextLine();
 
+            //carriage return spaces until a number is entered
             while ("".equals(nextLine)) {
                 nextLine = scanner.nextLine();
             }

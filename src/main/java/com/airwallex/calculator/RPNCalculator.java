@@ -18,6 +18,7 @@ public class RPNCalculator implements Calculator {
 
     private final String SUPPORTED_OPERATORS ="+, -, *, /, sqrt, clear, undo";
     private final String QUIT = "quit";
+    private final String EXIT = "exit";
     private final String HELP = "help";
 
     public RPNCalculator(Stack<BigDecimal> workingStack, StackInstruction stackInstruction, OperatorsFactory operatorsFactory) {
@@ -33,7 +34,7 @@ public class RPNCalculator implements Calculator {
 
     @Override
     public void process(String input) {
-        if(QUIT.equalsIgnoreCase(input)) {
+        if(QUIT.equalsIgnoreCase(input) || EXIT.equalsIgnoreCase(input)) {
             System.out.println("Exit from RPN Calculator!");
             System.exit(0);
         }
