@@ -61,6 +61,9 @@ public class RPNCalculator implements Calculator {
         workingStack = operatorsFactory.getOperatorHandler(input).saveProcess(stackInstruction, workingStack);
     }
 
+    /**
+     * Prints the contents of the stack
+     */
     @Override
     public void print() {
         System.out.print("stack: ");

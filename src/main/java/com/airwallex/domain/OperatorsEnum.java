@@ -3,6 +3,10 @@ package com.airwallex.domain;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Enum that describes the symbol and
+ * the number of operands used for the operation
+ */
 public enum OperatorsEnum {
     ADD("+", "Add", 2),
     SUB("-", "Subtract", 2),
