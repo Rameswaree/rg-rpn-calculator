@@ -14,6 +14,7 @@ public class SqrtOperator extends InstructorsOperator {
         if(operand.compareTo(BigDecimal.ZERO) < 0) {
             System.out.println("Square root of a negative number is not allowed");
 
+            //restore to the previous state
             workingStack.push(operand);
             isToBeSaved = false;
 

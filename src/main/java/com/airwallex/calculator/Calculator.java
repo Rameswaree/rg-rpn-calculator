@@ -1,7 +1,7 @@
 package com.airwallex.calculator;
 
 public interface Calculator {
-    abstract void process(String input);
-    abstract void print();
-    public abstract void handle(String nextLine);
+    void process(String input);
+    void print();
+    void handle(String nextLine);
 }

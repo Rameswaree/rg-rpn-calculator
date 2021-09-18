@@ -28,7 +28,7 @@ public class RPNCalculator implements Calculator {
         this.decimalFormat = new DecimalFormat("0.##########");
 
         System.out.println("---------- Welcome to RPN Calculator ----------");
-        System.out.printf("Enter a number (or numbers) and any of the following operators to perform operations :[%s] \n Enter help for more help, quit to exit", SUPPORTED_OPERATORS);
+        System.out.printf("Enter a number (or numbers) and any of the following operators to perform operations :[%s] \n Enter help for more help, quit to exit \n", SUPPORTED_OPERATORS);
 
     }
 

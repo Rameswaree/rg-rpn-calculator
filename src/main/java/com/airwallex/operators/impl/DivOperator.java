@@ -14,6 +14,7 @@ public class DivOperator extends InstructorsOperator {
         if(operandOne.equals(BigDecimal.ZERO)) {
             System.out.println("Division by zero is not allowed");
 
+            //restore to the previous status
             workingStack.push(operandOne);
             isToBeSaved = false;
 
