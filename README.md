@@ -14,3 +14,4 @@ The application also handles the following scenarios by displaying appropriate m
 
 * Division by zero
 * Square root of a negative number
+* Insufficient parameters
