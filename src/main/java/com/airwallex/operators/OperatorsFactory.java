@@ -13,10 +13,10 @@ public class OperatorsFactory {
         init();
     }
 
-    /**
-     * On calling the constructor, the init method gets
-     * invoked, initializing the map with the operator
-     * and the appropriate subclass of InstructorsOperator
+    /*
+      On calling the constructor, the init method gets
+      invoked, initializing the map with the operator
+      and the appropriate subclass of InstructorsOperator
      */
     private void init() {
         operatorsMap = new HashMap<>();
