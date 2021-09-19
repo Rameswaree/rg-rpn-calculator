@@ -10,7 +10,7 @@ The application supports the following operations :
 * Undo (undo)
 * Clear (clear)
 
-#Step to initiate the calculator:
+#Steps to initiate the calculator:
 
 * Open the application in any IDE.
 * Open the file App.java.
