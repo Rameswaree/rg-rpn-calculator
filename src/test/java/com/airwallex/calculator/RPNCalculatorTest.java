@@ -160,7 +160,7 @@ public class RPNCalculatorTest {
     }
 
     private String getPeekValue() {
-        DecimalFormat decimalFormat = new DecimalFormat("0.##########");
+        DecimalFormat decimalFormat = new DecimalFormat("0.###############");
         decimalFormat.setRoundingMode(RoundingMode.DOWN);
 
         return decimalFormat.format(workingStack.peek());

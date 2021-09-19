@@ -1,6 +1,6 @@
 # rg-rpn-calculator
 
-This application supports the following operations :
+The application supports the following operations :
 
 * Addition (+)
 * Subtraction (-)
@@ -10,8 +10,16 @@ This application supports the following operations :
 * Undo (undo)
 * Clear (clear)
 
-The application also handles the following scenarios by displaying appropriate messages :
+#Step to initiate the calculator:
 
-* Division by zero
-* Square root of a negative number
-* Insufficient parameters
+* Open the application in any IDE.
+* Open the file App.java.
+* Right click inside the file and select the option 'Run App.main()'. This will start the application.
+* Follow the instructions printed while running the application to run the calculator application.
+  
+#Notes:
+
+* While giving input, the operands must be given first, followed by the operator. For example: 2 3 +
+* If insufficient parameters are given or if the order of inputs is different, then an error message gets printed, saying that there are insufficient parameters.
+* Square root of negative numbers is not allowed and this is also printed as an error message.
+* Division by zero is not allowed and hence an error message gets printed, followed by adding zero to the stack.
